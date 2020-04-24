@@ -24,9 +24,8 @@ int main(){
   double pi;
   double t;
   int i;
-  srand(time(NULL));
 
-  for(i = 0 ; i < 1000000 ; i++){
+  for(i = 0 ; i < 1000 ; i++){
 
     hits++;
 
@@ -48,6 +47,6 @@ int main(){
   int a;
   scanf("%d", &a);
   //Scanf unrelated to actually it just there for becaese when you run program program its immediately shuts down without it.
-    
+
 return 0;
 }
