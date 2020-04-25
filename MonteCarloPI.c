@@ -24,8 +24,9 @@ int main(){
   double pi;
   double t;
   int i;
+  srand(time(NULL));
 
-  for(i = 0 ; i < 1000 ; i++){
+  for(i = 0 ; i < 1000000 ; i++){
 
     hits++;
 
