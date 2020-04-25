@@ -4,7 +4,7 @@
 #include<time.h>
 
 
-/* I had a trouble because type double is cant no store
+/* I had a trouble before because type double is cant no store
 enough significant figures for these types of problems
 in couple weeks you can find this code more improved in my github repo:
 https://github.com/sufuk/NumericalMethods
