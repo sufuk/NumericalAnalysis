@@ -18,11 +18,11 @@ printf("True Value is: %lf\n", y0);
 sprintf(a, "%.3f", y);
 sscanf(a, "%f", &y);
 printf("Chopped Value is: %f\n", y);
-float true_error = (y - y0)* (-1);
+float true_error = (y0 - y);
 printf("True Error is: %f\n", true_error);
-float relative_error = (true_error / y );
+float relative_error = (true_error / y0 );
 printf("Relative Error is: %f\n", relative_error);
-float percent_error = (true_error / y) * 100;
+float percent_error = (true_error / y0) * 100;
 printf("Percent Error is %% %f\n", percent_error);
 printf("\n\n");
 
@@ -37,9 +37,9 @@ sscanf(b, "%f", &y1);
 printf("Chopped Value is: %f\n", y1);
 float true_error1 = (y2 - y1);
 printf("True Error is: %f\n", true_error1);
-float relative_error1 = (true_error1 / y1 );
+float relative_error1 = (true_error1 / y2 );
 printf("Relative Error is: %f\n", relative_error1);
-float percent_error1 = (true_error1 / y1) * 100;
+float percent_error1 = (true_error1 / y2) * 100;
 printf("Percent Error is %% %f\n", percent_error1);
   return 0;
 }
