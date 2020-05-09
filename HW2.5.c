@@ -7,7 +7,6 @@ double boltzmann(double A, double e, double T){
 
   return H;
 }
-
 double sphere_surface(double radius, double pi){
   //he Surface Area of a Sphere with radius r equals 4πr^2
   double A;
@@ -15,14 +14,6 @@ double sphere_surface(double radius, double pi){
   return A;
 }
 int main(){
-//H = A e σ T^4
-// H= WATTS
-//A= surface area
-// e dimensionless
-//σ stefan- boltzmann constant (5.67*10^-8 W/m^2-K^4)
-// T= absolute temperature(K)
-//          TO DO
-//determine Error of H for stell plate A=0.15m^2, e= 0.90 T=65(+-)20K
 double a0 = boltzmann(0.15, 0.90, 650);
 double a1 = boltzmann(0.15, 0.90, 670);
 double a2 = boltzmann(0.15, 0.90, 630);
