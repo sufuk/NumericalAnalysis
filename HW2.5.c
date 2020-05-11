@@ -4,7 +4,6 @@ double boltzmann(double A, double e, double T){
   double H;
   double constant = (5.67)*(pow(10, -8));
   H = (A)*(e)*(constant)*(pow(T, 4));
-
   return H;
 }
 double sphere_surface(double radius, double pi){
@@ -53,7 +52,6 @@ double a8 = boltzmann(s0, e1, T0);
 double a9 = boltzmann(s0, e1, T1);
 double a10 = boltzmann(s0, e1, T2);
 double e001 = (a9-a8)/2;
-
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e1, T0, a8);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e1, T1, a9);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e1, T2, a10);
@@ -66,7 +64,6 @@ printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e2, T0, a11);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e2, T1, a12);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s0, e2, T2, a13);
 printf("\nERROR0 =  = %lf \n\n",e003);
-//
 double a14 = boltzmann(s1, e0, T0);
 double a15 = boltzmann(s1, e0, T1);
 double a16 = boltzmann(s1, e0, T2);
@@ -90,8 +87,6 @@ printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s1, e2, T0, a20);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s1, e2, T1, a21);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s1, e2, T2, a22);
 printf("\nERROR1 =  = %lf \n\n",e007);
-
-//
 double a23 = boltzmann(s2, e0, T0);
 double a24 = boltzmann(s2, e0, T1);
 double a25 = boltzmann(s2, e0, T2);
@@ -115,6 +110,5 @@ printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s2, e2, T0, a29);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s2, e2, T1, a30);
 printf("\nSurface: %lf  emissy: %lf temperature: %lf  H: %lf", s2, e2, T2, a31);
 printf("\nERROR2 =  = %lf \n\n",e011);
-
   return 0;
 }
