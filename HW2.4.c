@@ -25,11 +25,11 @@ float myfunc1(float x){
 float fwdif(float x, float h, int order){
   float z0;
   if(order == 1){
-    z0 = (myfunc0(x + h) - myfunc0(x)) / h;
+    z0 = (myfunc(x + h) - myfunc(x)) / h;
 
   }
   else if(order == 2){
-    z0 = (myfunc1(x + h) - myfunc1(x)) / h;
+    z0 = (myfunc(x + 2*h) - (2*(myfunc(x + h))) + myfunc(x))/(pow(h, 2));
 
   }
 
@@ -39,11 +39,11 @@ float fwdif(float x, float h, int order){
 float bwdif(float x, float h, int order){
   float z0;
   if(order == 1){
-    z0 = (myfunc0(x) - myfunc0(x-h)) / h;
+    z0 = (myfunc(x) - myfunc(x-h)) / h;
 
   }
   else if(order == 2){
-    z0 = (myfunc1(x) - myfunc1(x-h)) / h;
+    z0 = (myfunc(x) - (2*(myfunc(x - h))) + myfunc(x - (2*h)))/(pow(h, 2));
 
   }
   return z0;
@@ -52,11 +52,11 @@ float bwdif(float x, float h, int order){
 float cndif(float x, float h, int order){
   float z0;
   if(order == 1){
-    z0 = (myfunc0(x + h) - myfunc0(x-h)) / (2*h);
+    z0 = (myfunc(x + h) - myfunc(x-h)) / (2*h);
 
   }
   else if(order == 2){
-    z0 = (myfunc1(x + h) - myfunc1(x-h)) / h;
+    z0 = (myfunc(x + h) - (2*(myfunc(x))) + myfunc(x-h))/(pow(h, 2));
 
   }
   return z0;
